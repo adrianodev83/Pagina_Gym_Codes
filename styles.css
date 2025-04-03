@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --fonte-principal: "Montserrat", sans-serif;
+    --fonte-secundaria: "Roboto", sans-serif;
+    --cor-background: #000000;
+    --cor-secundaria: #333333;
+    --cor-verde: #76FF03;
+    --cor-branco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-background);
+    font-family: var(--fonte-principal);
+    color: var(--cor-branco);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    background-image: url("imagens/GYM_Codes_cabecalho.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo__cabecalho {
+    max-width: 400px;
+    width: 80%;
+    padding: 40px;
+}
+
+/* BANNER SUPERIOR */
+.banner__superior {
+    background-image: url("imagens/GYM_CODES_banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 0 30px;
+    text-align: center;
+}
+
+.descricao__banner {
+    border-left: 8px solid var(--cor-verde);
+    padding-left: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/* BOTÃO DE CONTATO */
+.banner__contato {
+    position: relative;
+    background-color: var(--cor-verde);
+    width: 100%;
+    height: 30px;
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__contato__link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background-color: transparent;
+    color: #000;
+    padding: 1rem 2rem;
+    height: 60px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.banner__contato__link:hover {
+    font-size: 1.2rem;
+    transition: font-size 0.5s ease;
+
+}
+
+.banner__contato__link img {
+    width: 50px;
+    height: auto;
+}
+
+/* BENEFÍCIOS */
+.banner__beneficios {
+    position: relative;
+    padding: 4rem 2rem 2rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 5px solid var(--cor-verde);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.titulo__beneficios {
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--cor-background);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-verde);
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.lista__beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.item__beneficios {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.item__beneficios:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.icon__beneficios {
+    width: 40px;
+    height: auto;
+}
+
+.nome__beneficios {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--cor-verde);
+}
+
+.descricao__beneficios {
+    font-family: var(--fonte-secundaria);
+    font-size: 0.9rem;
+    color: var(--cor-branco);
+}
+
+/* BANNER INFERIOR */
+.banner__inferior {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0,5rem;
+    height: 200px;
+    width: 65%;
+    padding: 2rem;
+    background-color: var(--cor-verde);
+    border-radius: 15px;
+    margin: 40px auto;
+    margin-top: 100px;
+    overflow: visible;
+}
+
+.descricao__inferior {
+    width: 80%;
+    height: 100;
+    line-height: 2rem;
+    position: absolute;
+    left: 90px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--cor-background);
+    text-align: center;
+    
+}
+
+.imagem__banner {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    top: -64px; 
+    right: -45px; 
+}
+
+/* SAIBA MAIS */
+.banner__saiba__mais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.descricao__saiba__mais {
+    background-color: var(--cor-verde);
+    width: 500px;
+    height: 50px;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;    
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.descricao__saiba__mais:hover {
+    font-size: 1.6rem;
+    transition: font-size 0.5s ease;
+}
+
+.imagem__whats {
+    width: 150px;
+    position: absolute;
+    margin-right: 400px;
+}
+
+/* CHAMADA FINAL */
+.banner__chamada__logo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.banner__chamada__imagem {
+    max-height: 80px;
+    width: 200px;
+    
+}
+
+.banner__chamada__descricao {
+    border-left: 8px solid var(--cor-verde);
+    padding-left: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* DEPOIMENTOS */
+.banner__depoimentos {
+    padding: 4rem 2rem;
+    background-color: var(--cor-background);
+    text-align: center;
+}
+
+.container-depoimentos {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px 0 40px;
+    gap: 40px;
+}
+
+.titulo__depoimentos {
+    color: var(--cor-verde);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.depoimentos__container {
+    background-color: var(--cor-verde);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.descricao__depoimentos {
+    font-style: italic;
+    color: var(--cor-background);
+}
+
+.descricao__depoimentos cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--cor-background);
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--cor-verde);
+}
+
+.footer__imagem {
+    width: 150px;
+}
+
+
+.item__beneficios {
+    transition: transform 0.3s ease;
+}
+
+.item__beneficios:hover {
+    transform: scale(1.02);
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1020px) {
+    .descricao__inferior {
+        position: absolute;
+        font-size: 1.2rem;
+        left: 20px;
+    }
+
+    .imagem__banner {
+        top: -65px;
+        max-width: 200px;
+    }
+
+    .descricao__saiba__mais {
+        padding: 1rem 2rem 1rem 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__superior {
+        padding: 150px 0 20px;
+    }
+
+    .descricao__banner {
+        font-size: 1.2rem;
+        padding-left: 0 ;
+        margin: 0 20% 0 20%;
+    }
+
+    .logo__cabecalho {
+        max-width: 300px;
+    }
+
+    .banner__beneficios {
+        padding: 3rem 1rem 1rem;
+    }
+
+    .titulo__beneficios {
+        font-size: 1.2rem;
+    }
+
+    .banner__inferior {
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+    }
+
+    .descricao__inferior {
+        position: absolute;
+        width: 340px;
+        font-size: 1rem;
+        font-weight: 700;
+        left: 50px;
+    }
+
+    .imagem__banner {
+        top: -49px;
+        max-width: 190px;
+        right: -38px;
+    }
+
+    .banner__chamada__logo {
+        padding: 30px 20px;
+    }
+
+    .lista__beneficios {
+        padding-left: 20px;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 682px) {
+    .descricao__inferior {
+        left: 30px;
+        font-size: 0.8rem;
+        width: 240px;
+    }
+
+    .banner__chamada__descricao {
+        font-size: 1.0rem;
+        font-weight: 600;
+    }
+
+    .descricao__saiba__mais {
+        width: 400px;
+        height: 40px;
+    }
+
+    .imagem__whats {
+        width: 120px;
+        position: absolute;
+        margin-right: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo__cabecalho {
+        max-width: 200px;
+    }
+
+    .banner__superior {
+        padding: 100px 0 20px;
+    }
+
+    .descricao__banner {
+        font-size: 0.8rem;
+        border-left: 5px solid var(--cor-verde);
+    }
+    
+    .banner__contato__link, .descricao__saiba__mais {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .banner__beneficios {
+        padding: 25px 16px 16px;
+    }
+
+    .lista__beneficios {
+        padding-left: 5px;
+        padding-top: 0;
+    }
+
+    .banner__inferior {
+        height: 120px;
+        width: 80%;
+        right: 10px;
+    }
+
+    .descricao__inferior {
+        position: absolute;
+        font-size: 0.8rem;
+        left: 50px;
+        height: 100px;
+        line-height: 1.2rem;
+        font-weight: 500;
+    }
+
+    .imagem__banner {
+        top: -65px;
+        max-width: 140px;
+        right: -30px;
+        bottom: 0;
+        
+    }
+
+    .descricao__saiba__mais {
+        width: 300px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .imagem__whats {
+        width: 120px;
+        position: absolute;
+        margin-right: 250px;
+    }
+
+    .banner__chamada__descricao {
+        border-left: 5px solid var(--cor-verde);
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-left: 20px;
+    }
+
+    .banner__depoimentos {
+        padding: 2rem 1rem;
+    }
+
+    .titulo__depoimentos {
+        font-size: 1.2rem;
+    }
+
+    .depoimentos__container {
+        padding: 1rem;
+        max-width: 500px;
+        max-height: 200px;
+        text-align: left;
+    }
+    
+    .descricao__depoimentos {
+        font-size: 0.6rem;
+        line-height: normal;
+        font-style: italic;
+        color: var(--cor-background);
+    }
+    
+    .descricao__depoimentos cite {
+        display: block;
+        margin-top: 0.5rem;
+        font-style: normal;
+        font-weight: bold;
+        color: var(--cor-background);
+    }
+
+    .footer__imagem {
+        width: 80px;
+    }
+}
+
