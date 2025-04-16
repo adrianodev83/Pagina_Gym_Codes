@@ -279,8 +279,8 @@ body {
 .container-depoimentos {
     display: flex;
     justify-content: center;
-    padding: 0 40px 0 40px;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .titulo__depoimentos {
