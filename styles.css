@@ -96,8 +96,7 @@ body {
 }
 
 .banner__contato__link img {
-    width: 50px;
-    height: auto;
+    width: 40px;
 }
 
 /* BENEFÍCIOS */
@@ -449,6 +448,10 @@ footer {
         padding: 100px 0 20px;
     }
 
+    .icone__contato {
+        max-width: 35px;
+    }
+
      
     .banner__contato__link, .descricao__saiba__mais {
         padding: 0.8rem 1.5rem;
@@ -600,7 +603,7 @@ footer {
 
 @media (max-width: 327px) {
     .icone__contato {
-        max-width: 25px;
+        max-width: 20px;
     }
 
     .titulo__beneficios {
