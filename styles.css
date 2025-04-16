@@ -556,7 +556,7 @@ footer {
     }
 
     .icone__contato {
-        max-width: 30px;
+        max-width: 20px;
     }
 
         .descricao__inferior {
@@ -592,7 +592,7 @@ footer {
 
 @media (max-width: 327px) {
     .icone__contato {
-        max-width: 30px;
+        max-width: 20px;
     }
 
     .titulo__beneficios {
