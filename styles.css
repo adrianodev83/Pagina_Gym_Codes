@@ -381,7 +381,7 @@ footer {
 
     .descricao__inferior {
         position: absolute;
-        width: 340px;
+        width: 60%;
         font-size: 1rem;
         font-weight: 700;
         left: 50px;
@@ -408,10 +408,14 @@ footer {
 }
 
 @media (max-width: 682px) {
+    .banner__inferior {
+        padding: 20px 80px 20px 20px;
+    }
+
     .descricao__inferior {
         left: 30px;
-        font-size: 1rem;
-        width: 240px;
+        font-size: 0.75rem;
+        width: 55%;
     }
 
     .banner__chamada__descricao {
@@ -470,6 +474,7 @@ footer {
         position: absolute;
         font-size: 0.8rem;
         left: 50px;
+        width: 55%;
         height: 100px;
         line-height: 1.2rem;
         font-weight: 500;
@@ -556,10 +561,10 @@ footer {
     }
 
     .icone__contato {
-        max-width: 20px;
+        max-width: 25px;
     }
 
-        .descricao__inferior {
+    .descricao__inferior {
         left: 11px;
         width: 200px;
     }
@@ -572,6 +577,9 @@ footer {
         font-size: 0.6rem;
     }
 
+    .titulo__beneficios {
+        font-size: 0.8rem;    
+    }
     .nome__beneficios {
         font-size: 0.8rem;
     }
@@ -592,11 +600,12 @@ footer {
 
 @media (max-width: 327px) {
     .icone__contato {
-        max-width: 20px;
+        max-width: 25px;
     }
 
     .titulo__beneficios {
-        font-size: 0.8rem;    
+        font-size: 0.8rem;
+        margin-bottom: 10px;    
     }
 
     .icon__beneficios {
@@ -666,4 +675,3 @@ footer {
         padding: 10px;
     }
 }
-
